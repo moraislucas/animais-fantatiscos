@@ -38,6 +38,6 @@ const funcionamento = new Funcionamento('[data-semana', 'aberto');
 funcionamento.init();
 
 
-fethAnimais('../../animais-api.json', '.numeros-grid');
+fethAnimais('.animais-api.json', '.numeros-grid');
 
 fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');

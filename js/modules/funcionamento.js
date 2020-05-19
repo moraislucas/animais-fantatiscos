@@ -1,5 +1,4 @@
 export default class initFuncionamento {
-
   constructor(funcionamento, activeClass) {
     this.funcionamento = document.querySelector(funcionamento);
     this.activeClass = activeClass;
@@ -18,8 +17,7 @@ export default class initFuncionamento {
 
   estaAberto() {
     const semanaAberto = this.diasSemana.indexOf(this.diaAgora) !== -1;
-    const horarioAberto = (this.horaAgora >= this.horarioSemana[0] &&
-      this.horaAgora < this.horarioSemana[1]);
+    const horarioAberto = (this.horaAgora >= this.horarioSemana[0] && this.horaAgora < this.horarioSemana[1]);
     return semanaAberto && horarioAberto;
   }
 
