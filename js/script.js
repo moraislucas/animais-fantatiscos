@@ -6,7 +6,7 @@ import Tooltip from './modules/tooltip.js';
 import DropdownMenu from './modules/dropdown-menu.js';
 import MenuMobile from './modules/menu-mobile.js';
 import Funcionamento from './modules/funcionamento.js';
-import fethAnimais from './modules/fetch-animais.js';
+import fetchAnimais from './modules/fetch-animais.js';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
 import ScrollAnima from './modules/scroll-anima.js';
 import SlideNav from './modules/slide.js';
@@ -39,7 +39,7 @@ const funcionamento = new Funcionamento('[data-semana', 'aberto');
 funcionamento.init();
 
 
-fethAnimais('../animais-api.json', '.numeros-grid');
+fetchAnimais('./animaisapi.json', '.numeros-grid');
 
 fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
 
